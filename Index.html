@@ -1,0 +1,90 @@
+<!doctype html>
+
+<htlm>
+
+<head>
+<title>This is the title</title>
+<style type = "text/css">
+    body{background-color: white;}
+	h1 {text-align: center; color: black;}
+	p { text-indent: 0px; color: black; text-shadow: 1px 1px black;}
+	a:link{color:red;}
+	a:visited{color: green;}
+	a:active{color: black;}
+	span {color: green;}
+	div{border :2px solid red;
+        position: absolute;
+        top:30px;
+        left:5px;
+        width: 300px;
+	}
+	
+    .blackhat { color: green;}
+    #example{
+    	border: none;
+    	top: 55px;
+    	left:-115px;
+    	position:relative;}
+    #meet{}
+
+</style><!--div have an error cause width move all text including blackhat content-->
+</head>
+
+<body background="code2.jpg"><!--Put a background wallpaper-->
+
+<a href = "mailto:earayad@hotmail.cl" title="dont send plz"><div>Send Email to Elias tag(div)</div></a><!--With div i can move where i want that are between him-->
+<div id="example"><p class = "blackhat">Hi my friend</p></div><!--Here i create a class blackhat that modify all the text that i asing him-->
+<a href="#farm">farming</a> <!--Insider link to find some topics-->
+<h1>This is the header one</h1>
+<p>paragraph linea <em>esto esta entre el tag(em) </em> paragraph line <span>esto se encuentra entre el tag(span)</span> paragraph linea y luego tag(br/).<br/>
+paragraph linea <strong>esto se encuentra entre tag(strong) </strong> paragraph line.<br/>
+paragraph line.</p>
+
+<a href="http://www.w3schools.com">This is a link</a><!--Put a link in the text-->
+<hr /><!--Long line to separate-->
+
+<h2><a name="farm"></a>This is the header one</h2>
+<p>Esto representa el paragaph line<br/>
+este salto de linea de sebe al (br) que representa break.<br/></p>
+
+<form action="setting.php" method="post">
+	Username: <input type="text" name="name" />
+	<br />
+	Password: <input type="password" name="pass">
+	<br />
+    Email: <input type="email" name="mail">
+    <br />
+    ID: <input type="identi" name="id">
+    <br />
+
+	<input type="submit" name="submit!">
+	<br/>
+
+	<p>Select a file!</p>
+	<input type="file" name="file">
+	<br/>
+	Male: <input type="radio" name="sex" value = "male"/>
+	Female:<input type="radio" name="sex" value ="female"/>
+    <p>Select some type of meet!</p>
+    beacon:<input type="checkbox" name="meet" value="beacon"/>
+    beef:<input type="checkbox" name="meet" value="beacon"/>
+    cheaken:<input type="checkbox" name="meet" value="beacon"/>
+    <br/>
+    Where you come from?
+    <br/>
+    <select name = "Region">
+    	<option value="region">Magallanes</option>
+    	<option value="region">Arica y Parinacota</option>
+    	<option value="region">De los lagos</option>
+    	<option value="region">Valparaiso</option>
+    	<option value="region">Santiago</option>
+    </select>
+    <br/>
+    What is your opinion about the meet?
+    <br/>
+    <textarea name="opinion" rows="5" cols="40">
+    </textarea>
+</form><!--Utilizado para scripts de php-->
+</body>
+
+</htlm>
